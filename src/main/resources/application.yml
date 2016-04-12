@@ -20,7 +20,6 @@ spring:
     driver-class-name: com.mysql.jdbc.Driver
     username: root
     password: root
-
 logging:
   level:
     root: info
@@ -29,6 +28,10 @@ logging:
       mybatis: debug
       springframework:
         web: debug
+mybatis:
+  config: classpath:mybatis/mybatis-config.xml
+  mapper-locations: classpath*:mybatis/xml/*Mapper.xml
+  type-aliases-package: com.piggsoft.*.model
 ---
 spring:
   profiles: test
