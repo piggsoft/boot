@@ -1,1 +1,1 @@
-spring-boot-mybatis demo
+spring-boot-mybatis templates
