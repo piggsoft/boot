@@ -1,0 +1,41 @@
+server:
+  address: 127.0.0.1
+  port: 8081
+config:
+  url: localhost
+spring:
+  redis:
+    host: 192.168.57.176
+    port: 6379
+    pool:
+      max-active: 1000
+      max-idle: 100
+      min-idle: 0
+      max-wait: 10000
+    timeout: 2000
+  aop:
+    auto: true
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/auto_boss_rate?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: root
+
+logging:
+  level:
+    root: info
+    com:
+      piggsoft: debug
+      mybatis: debug
+      springframework:
+        web: debug
+---
+spring:
+  profiles: test
+server:
+  address: 192.168.1.120
+---
+spring:
+  profiles: pro
+server:
+  address: 192.168.1.120
