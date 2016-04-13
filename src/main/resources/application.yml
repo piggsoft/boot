@@ -20,6 +20,8 @@ spring:
     driver-class-name: com.mysql.jdbc.Driver
     username: root
     password: root
+    #控制读取sql文件是哪个
+    platform: debug
 logging:
   level:
     root: info

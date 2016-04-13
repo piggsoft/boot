@@ -5,7 +5,8 @@
 <generatorConfiguration>
 
     <!-- !!!! Driver Class Path !!!! -->
-    <classPathEntry location="C:\Users\yaochen4\.IntelliJIdea2016.1\config\jdbc-drivers\mysql-connector-java-5.1.35-bin.jar"/>
+    <classPathEntry
+            location="C:\Users\yaochen4\.IntelliJIdea2016.1\config\jdbc-drivers\mysql-connector-java-5.1.35-bin.jar"/>
 
     <context id="context" targetRuntime="MyBatis3">
         <commentGenerator>
@@ -40,10 +41,8 @@
         </javaClientGenerator>
 
         <!-- !!!! Table Configurations !!!! -->
-        <table tableName="t_flow" domainObjectName="Flow"/>
-        <table tableName="t_operator" domainObjectName="Operator"/>
-        <table tableName="t_operator_area" domainObjectName="OperatorArea"/>
-        <table tableName="t_package" domainObjectName="PackageBean"/>
-        <table tableName="t_user_his" domainObjectName="UserHis"/>
+        <table tableName="t_flow" domainObjectName="Flow">
+        <property name="rootInterface" value="com.piggsoft.mapper.BaseMapper&lt;Flow, FlowExample&gt;"/>
+        </table>
     </context>
 </generatorConfiguration>

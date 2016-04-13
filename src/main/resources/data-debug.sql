@@ -1,0 +1,2 @@
+INSERT INTO `t_flow` (`id`, `title`, `size`, `price`, `discount`, `operator_area_id`, `creator`, `create_time`, `modifier`, `modified_time`) VALUES
+	('2', NULL, 123.00, NULL, NULL, NULL, NULL, NULL, NULL, NULL);

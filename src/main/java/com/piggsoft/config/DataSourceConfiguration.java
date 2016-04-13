@@ -3,6 +3,7 @@ package com.piggsoft.config;
 import com.alibaba.druid.pool.DruidDataSource;
 import com.alibaba.druid.support.http.StatViewServlet;
 import com.alibaba.druid.support.http.WebStatFilter;
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.context.embedded.FilterRegistrationBean;
 import org.springframework.boot.context.embedded.ServletRegistrationBean;
@@ -15,6 +16,7 @@ import javax.sql.DataSource;
 import java.sql.SQLException;
 
 @Configuration
+@MapperScan("com.piggsoft.mapper")
 public class DataSourceConfiguration {
 
     @Value("${spring.datasource.driver-class-name}") String driver;
