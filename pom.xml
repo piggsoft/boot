@@ -71,6 +71,15 @@
 			<artifactId>spring-boot-configuration-processor</artifactId>
 			<optional>true</optional>
 		</dependency>
+
+		<!-- swagger-springmvc -->
+		<dependency>
+			<groupId>com.mangofactory</groupId>
+			<artifactId>swagger-springmvc</artifactId>
+			<version>1.0.2</version>
+		</dependency>
+		<!-- swagger-springmvc dependencies -->
+
 		
 		<dependency>
 			<groupId>mysql</groupId>

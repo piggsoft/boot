@@ -23,7 +23,7 @@ spring:
     #控制读取sql文件是哪个
     platform: debug
     #是否进行脚本初始化
-    initialize: true
+    initialize: false
 logging:
   level:
     root: info
