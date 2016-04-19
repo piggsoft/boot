@@ -1,12 +1,13 @@
 package com.piggsoft.service;
 
-import com.piggsoft.model.Flow;
-import com.piggsoft.model.FlowExample;
+import com.piggsoft.model.TFlow;
+import org.springframework.stereotype.Service;
 
 /**
  * <br>Created by fire pigg on 2016/4/13.
  *
  * @author piggsoft@163.com
  */
-public interface FlowService extends BaseService<Flow, FlowExample> {
+@Service
+public class FlowService extends  BaseService<TFlow> {
 }

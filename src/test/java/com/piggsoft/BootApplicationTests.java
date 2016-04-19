@@ -1,7 +1,7 @@
 package com.piggsoft;
 
 import com.piggsoft.config.Props;
-import com.piggsoft.model.Flow;
+import com.piggsoft.model.TFlow;
 import com.piggsoft.service.FlowService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -30,7 +30,7 @@ public class BootApplicationTests {
 
 	@Test
 	public void test() {
-		Flow flow = new Flow();
+		TFlow flow = new TFlow();
 		flow.setId("1");
 		flow.setSize(new BigDecimal("123"));
 		flowService.save(flow);
