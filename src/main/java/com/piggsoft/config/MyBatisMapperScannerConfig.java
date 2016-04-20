@@ -10,7 +10,7 @@ import java.util.Properties;
 
 @Configuration
 //注意，由于MapperScannerConfigurer执行的比较早，所以必须有下面的注解
-//MyBatisConfig.class是一个包含了SqlSessionFactory配置的类
+//MybatisAutoConfiguration.class是一个包含了SqlSessionFactory配置的类
 @AutoConfigureAfter(MybatisAutoConfiguration.class)
 public class MyBatisMapperScannerConfig {
 
